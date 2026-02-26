@@ -1,7 +1,220 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>腾讯云智能顾问 Skill 集</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e4e4e4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            color: #8892b0;
+            font-size: 18px;
+        }
+        .skills-grid {
+            display: grid;
+            gap: 24px;
+        }
+        .skill-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 32px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .skill-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .skill-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .skill-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .skill-title a:hover {
+            color: #00d4ff;
+        }
+        .badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .badge-python {
+            background: #3776ab;
+            color: #fff;
+        }
+        .badge-mit {
+            background: #4caf50;
+            color: #fff;
+        }
+        .badge-openclaw {
+            background: #7c3aed;
+            color: #fff;
+        }
+        .badge-new {
+            background: #ff6b6b;
+            color: #fff;
+        }
+        .skill-desc {
+            color: #a0aec0;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .skill-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        .feature-tag {
+            background: rgba(0, 212, 255, 0.1);
+            color: #00d4ff;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+        .skill-meta {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #6b7280;
+            font-size: 13px;
+        }
+        .skill-meta a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        .skill-meta a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #4a5568;
+            font-size: 14px;
+        }
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <header>
+            <h1>☁️ 腾讯云智能顾问 Skill 集</h1>
+            <p class="subtitle">OpenClaw 智能体技能集合，助力云上架构风险治理</p>
+        </header>
+        
+        <div class="skills-grid">
+            <!-- Skill 1: 巡检报告解析 -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h2 class="skill-title">
+                        <a href="https://github.com/fisherhhyu/tencent-cloud-smart-advisor-risk-assessment-report" target="_blank">
+                            📊 巡检报告解析
+                        </a>
+                    </h2>
+                    <div class="badges">
+                        <span class="badge badge-python">Python</span>
+                        <span class="badge badge-mit">MIT</span>
+                    </div>
+                </div>
+                <p class="skill-desc">
+                    解析腾讯云智能顾问巡检报告邮件，自动提取风险数据并生成可视化统计报告。支持多维度风险统计、网页生成和截图反馈。
+                </p>
+                <div class="skill-features">
+                    <span class="feature-tag">📧 邮件接收</span>
+                    <span class="feature-tag">📥 Excel 解析</span>
+                    <span class="feature-tag">📊 风险统计</span>
+                    <span class="feature-tag">🌐 网页生成</span>
+                    <span class="feature-tag">📸 截图反馈</span>
+                </div>
+                <div class="skill-meta">
+                    <span>📅 发布时间: 2026-02-26</span>
+                    <span><a href="https://github.com/fisherhhyu/tencent-cloud-smart-advisor-risk-assessment-report" target="_blank">查看详情 →</a></span>
+                </div>
+            </div>
+            
+            <!-- Skill 2: 智能顾问集成 -->
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h2 class="skill-title">
+                        <a href="https://github.com/fisherhhyu/tencent-cloud-smart-advisor-skill" target="_blank">
+                            🔧 智能顾问集成
+                        </a>
+                    </h2>
+                    <div class="badges">
+                        <span class="badge badge-python">Python</span>
+                        <span class="badge badge-openclaw">OpenClaw</span>
+                        <span class="badge badge-new">v2.0</span>
+                    </div>
+                </div>
+                <p class="skill-desc">
+                    腾讯云智能顾问 OpenClaw Skill，支持完整的风险巡检、策略查询和自动修复。获取风险列表、查询巡检规则、健康状态检测、风险修复。
+                </p>
+                <div class="skill-features">
+                    <span class="feature-tag">📊 风险列表</span>
+                    <span class="feature-tag">📋 巡检规则</span>
+                    <span class="feature-tag">🔍 风险分析</span>
+                    <span class="feature-tag">🟢 健康状态</span>
+                    <span class="feature-tag">🔧 自动修复</span>
+                </div>
+                <div class="skill-meta">
+                    <span>📅 发布时间: 2025-01-15</span>
+                    <span><a href="https://github.com/fisherhhyu/tencent-cloud-smart-advisor-skill" target="_blank">查看详情 →</a></span>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Powered by <a href="https://github.com/openclaw/openclaw" target="_blank">OpenClaw</a></p>
+            <p>© 2026 Tencent Cloud Smart Advisor Skills</p>
+        </footer>
+    </div>
 </body>
 </html>
